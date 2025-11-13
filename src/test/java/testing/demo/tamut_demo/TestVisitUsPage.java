@@ -26,14 +26,11 @@ public class TestVisitUsPage {
 	
 	@Test
 	public void testVisitUs() {
-		// Step 1: open main page done in setup
-		
-		// Step 2: Click “Visit Us” from “About” menu
+
 		mainPage.clickVisitUsFromAbout();
 		
 		VisitUsPage visitUsPage = new VisitUsPage(driver);
 		
-		// 2.a–2.d
 		assertTrue(visitUsPage.isUpcomingEventsDisplayed());
 		assertTrue(visitUsPage.isScheduleCampusTourDisplayed());
 		assertTrue(visitUsPage.isVirtualTourDisplayed());

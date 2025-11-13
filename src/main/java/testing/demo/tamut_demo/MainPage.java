@@ -36,7 +36,6 @@ public class MainPage {
 		driver.get(URL);
 	}
 	
-	// Generic search: returns SearchResultsPage
 	public SearchResultsPage search(String searchInput) {
 		searchBox.sendKeys(searchInput + Keys.ENTER);
 		return new SearchResultsPage(driver);

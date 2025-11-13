@@ -18,7 +18,6 @@ public class AlumniPage {
 	@FindBy(linkText = "Update Alumni Information")
 	private WebElement updateAlumniInfoLink;
 	
-	// The Women for A&M-Texarkana link from Alumni
 	@FindBy(xpath = "//a[contains(., 'Women for A&M-Texarkana')]")
 	private WebElement womenForAMTexarkanaLink;
 	

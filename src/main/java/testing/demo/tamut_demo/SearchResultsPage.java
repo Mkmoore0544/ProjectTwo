@@ -9,11 +9,9 @@ public class SearchResultsPage {
 
     private WebDriver driver;
 
-    // First result that links to the Computer Science program
     @FindBy(xpath = "//a[contains(@href, '/academic-programs/computer-science')]")
     private WebElement firstComputerScienceLink;
 
-    // First result that links to Women for A&M–Texarkana
     @FindBy(xpath = "//a[contains(@href, '/alumni/wam/')]")
     private WebElement womenTamutLink;
 
@@ -22,7 +20,6 @@ public class SearchResultsPage {
         PageFactory.initElements(driver, this);
     }
 
-    // ---- For Test Case 2 ----
     public boolean isComputerScienceLinkDisplayed() {
         return firstComputerScienceLink.isDisplayed();
     }
@@ -32,7 +29,6 @@ public class SearchResultsPage {
         return new ComputerSciencePage(driver);
     }
 
-    // ---- For Test Case 4 ----
     public boolean isWomenTamutLinkDisplayed() {
         return womenTamutLink.isDisplayed();
     }

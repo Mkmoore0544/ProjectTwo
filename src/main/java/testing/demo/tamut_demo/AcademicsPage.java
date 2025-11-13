@@ -21,7 +21,6 @@ public class AcademicsPage {
 	@FindBy(linkText = "Online Programs")
 	private WebElement onlineProgramsLink;
 
-	// FIXED locator for Computer Science "Learn More"
 	@FindBy(xpath = "//a[contains(@href, 'computer-science/index.html')]")
 	private WebElement csLearnMoreLink;
 	

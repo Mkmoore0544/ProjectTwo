@@ -26,19 +26,16 @@ public class TestWomenFromAlumni {
 	
 	@Test
 	public void testWomenFromAlumni() {
-		// Step 2: Click “Alumni & Friends”
+
 		AlumniPage alumniPage = mainPage.goToAlumniPage();
 		
-		// 2.a–2.e
 		assertTrue(alumniPage.isOrderAlumniBrickDisplayed());
 		assertTrue(alumniPage.isJoinAlumniAssociationDisplayed());
 		assertTrue(alumniPage.isUpdateAlumniInfoDisplayed());
 		assertTrue(alumniPage.isWomenForAMTexarkanaDisplayed());
 		
-		// Step 3: Click “Women for A&M–Texarkana”
 		WomenForAMTexarkanaPage womenPage = alumniPage.clickWomenForAMTexarkana();
 		
-		// 3.a–3.c
 		assertTrue(womenPage.isMakeScholarshipDonationDisplayed());
 		assertTrue(womenPage.isJoinWomenDisplayed());
 		assertTrue(womenPage.titleIncludesWomenForAMTexarkana());

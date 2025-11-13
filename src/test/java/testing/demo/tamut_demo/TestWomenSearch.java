@@ -26,16 +26,13 @@ public class TestWomenSearch {
 	
 	@Test
 	public void testWomenSearch() {
-		// Step 2: input “Women” in search and enter
+
 		SearchResultsPage resultsPage = mainPage.search("Women");
 		
-		// 2.a - The link contains “Women tamut” is displayed
 		assertTrue(resultsPage.isWomenTamutLinkDisplayed());
 		
-		// Step 3: Click the first link which contains “Women”
 		WomenForAMTexarkanaPage womenPage = resultsPage.clickFirstWomenLink();
 		
-		// 3.a–3.c
 		assertTrue(womenPage.isMakeScholarshipDonationDisplayed());
 		assertTrue(womenPage.isJoinWomenDisplayed());
 		assertTrue(womenPage.titleIncludesWomenForAMTexarkana());
