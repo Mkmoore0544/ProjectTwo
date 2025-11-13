@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TAMUT Test Suite" verbose="1">
+  
+  <test name="TC1_VisitUs">
+    <classes>
+      <class name="testing.demo.tamut_demo.TestVisitUsPage"/>
+    </classes>
+  </test>
+
+  <test name="TC2_ComputerScienceSearch">
+    <classes>
+      <class name="testing.demo.tamut_demo.TestComputerScienceSearch"/>
+    </classes>
+  </test>
+
+  <test name="TC3_ComputerScienceFromAcademics">
+    <classes>
+      <class name="testing.demo.tamut_demo.TestComputerScienceFromAcademics"/>
+    </classes>
+  </test>
+
+  <test name="TC4_WomenSearch">
+    <classes>
+      <class name="testing.demo.tamut_demo.TestWomenSearch"/>
+    </classes>
+  </test>
+
+  <test name="TC5_WomenFromAlumni">
+    <classes>
+      <class name="testing.demo.tamut_demo.TestWomenFromAlumni"/>
+    </classes>
+  </test>
+
+</suite>

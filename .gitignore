@@ -1,0 +1,18 @@
+# Build output
+target/
+bin/
+test-output/
+
+# WebDrivers
+drivers/
+*.exe
+
+# Eclipse metadata
+.classpath
+.project
+.settings/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
