@@ -26,25 +26,20 @@ public class TestComputerScienceSearch {
 	
 	@Test
 	public void testComputerScienceSearchFlow() {
-		// Step 2: search “Computer Science”
+		
 		SearchResultsPage resultsPage = mainPage.search("Computer Science");
 		
-		// 2.a - link containing "Computer Science" is displayed
 		assertTrue(resultsPage.isComputerScienceLinkDisplayed());
 		
-		// Step 3: Click the first link which contains “Computer Science”
 		ComputerSciencePage csPage = resultsPage.clickFirstComputerScienceLink();
 		
-		// 3.a–3.c–3.4
 		assertTrue(csPage.isAccreditationDisplayed());
 		assertTrue(csPage.isFacultyDisplayed());
 		assertTrue(csPage.isApplyHereDisplayed());
 		assertTrue(csPage.isVisitUsDisplayed());
 		
-		// Step 4: Click “Visit Us” link
 		VisitUsPage visitUsPage = csPage.clickVisitUs();
 		
-		// 4.a–4.d
 		assertTrue(visitUsPage.isUpcomingEventsDisplayed());
 		assertTrue(visitUsPage.isScheduleCampusTourDisplayed());
 		assertTrue(visitUsPage.isVirtualTourDisplayed());
